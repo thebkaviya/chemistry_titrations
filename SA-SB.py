@@ -33,3 +33,10 @@ for i in v1:
 
     print(i, "---", round(ph,4) )
 
+import matplotlib.pyplot as plt
+# plt.plot(titration_volumes, pH_values)
+plt.plot(v1, ph_values)
+plt.xlabel('Titration volumes')
+plt.ylabel('pH values')
+plt.show()
+
