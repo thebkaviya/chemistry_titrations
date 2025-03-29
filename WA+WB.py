@@ -10,8 +10,14 @@ v2 = 0.025
 ka = 0.00002
 kb = 0.00002
 
-n2 = c2 * v2
 
-import math
+n2 = c2 * v2 
 
-for
+for i in v1:
+    n1 = c1 * float(i)
+
+    finaln1 = (c1 * kb) ** 0.5
+
+    finaln2 = (c2 * ka) ** 0.5
+
+    print(i, " -- ", finaln1, "  ", finaln2 )
