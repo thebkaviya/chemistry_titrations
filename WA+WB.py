@@ -18,9 +18,9 @@ import math
 for i in v1:
     n1 = c1 * float(i)
 
-    finaln1 = (c1 * kb) ** 0.5
+    finaln1 = ((c1 * kb) ** 0.5)*i
 
-    finaln2 = (c2 * ka) ** 0.5
+    finaln2 = ((c2 * ka) ** 0.5)*v2
 
     #print(i, " -- ", finaln1, "  ", finaln2 )
 
