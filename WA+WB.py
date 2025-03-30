@@ -7,8 +7,8 @@ print (v1)
 c1 = c2 = 1.0
 v2 = 0.025
 
-ka = 0.00002
-kb = 0.00002
+ka = 1.75 * (10**-5)
+kb = 1.76 * (10**-5)
 
 
 n2 = c2 * v2 
@@ -22,7 +22,7 @@ for i in v1:
 
     finaln2 = (c2 * ka) ** 0.5
 
-    print(i, " -- ", finaln1, "  ", finaln2 )
+    #print(i, " -- ", finaln1, "  ", finaln2 )
 
     if finaln2 > finaln1:
         ph = -1 * math.log((finaln2 - finaln1) / (float(i + v2)))
@@ -32,7 +32,7 @@ for i in v1:
         ph = 14 - poh
 
     elif finaln2 == finaln1:
-        ph = 0000000000
+        ph = 0
 
     else:
         ph = -1 * math.log(ka ** 0.5)
